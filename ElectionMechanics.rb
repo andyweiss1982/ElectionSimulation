@@ -265,14 +265,14 @@ end
 			Display.show_voting
 			@demtotal += 1
 			puts "✭✭✭✭✭✭✭✭✭✭✭✭✭✭✭✭✭✭✭✭✭✭✭".center(78)
-			puts "✭ DEMOCRATIC VOTES: #{@demtotal} ✭" .center(78)
+			puts "     PRESS ENTER     ✭ DEMOCRATIC VOTES: #{@demtotal} ✭     TO CONTINUE     " .center(78)
 			puts "✭✭✭✭✭✭✭✭✭✭✭✭✭✭✭✭✭✭✭✭✭✭✭".center(78)
 			sleep 2
 		elsif (politician.politicalnum <= rand(100))
 			Display.show_voting
 			@reptotal += 1
 			puts "✭✭✭✭✭✭✭✭✭✭✭✭✭✭✭✭✭✭✭✭✭✭✭".center(78)
-			puts "✭ REPUBLICAN VOTES: #{@reptotal} ✭".center(78)
+			puts "     PRESS ENTER     ✭ REPUBLICAN VOTES: #{@reptotal} ✭     TO CONTINUE     ".center(78)
 			puts "✭✭✭✭✭✭✭✭✭✭✭✭✭✭✭✭✭✭✭✭✭✭✭".center(78)
 			sleep 2
 		end}
