@@ -119,7 +119,7 @@ def run_primaries
 			puts "#{politician.name} SAYS...".center(60)
 			sleep 1
 			Display.blank
-			puts "I'M A #{politician.party} STALWART.".center(60)
+			puts "I'M A STALWART #{politician.party}.".center(60)
 			puts "EVEN THOUGH I LOST THE PRIMARY, I STILL SUPPORT #{@democraticnominee}".center(60)
 			Display.blank
 			Display.longest_line
@@ -140,7 +140,7 @@ def run_primaries
 			sleep 1
 			Display.blank
 			puts "I'M A LOYAL #{politician.party}.".center(60)
-			puts "I'M ALWAYS GOING TO SUPPORT THE #{politician.party}.".center(60)
+			puts "I'M ALWAYS GOING TO SUPPORT THE #{politician.party} NOMINEE.".center(60)
 			Display.blank
 			Display.longest_line
 			sleep 2
@@ -215,7 +215,7 @@ def run_primaries
 			puts "#{politician.name} SAYS...".center(60)
 			sleep 1
 			Display.blank
-			puts "I'M A #{politician.party} STALWART.".center(60)
+			puts "I'M A STALWART #{politician.party}.".center(60)
 			puts "WHO DO YOU REALLY THINK I'M GOING TO SUPPORT?".center(60)
 			Display.blank
 			Display.longest_line
@@ -235,7 +235,7 @@ def run_primaries
 			sleep 1
 			Display.blank
 			puts "I'M A LOYAL #{politician.party}.".center(60)
-			puts "I'M ALWAYS GOING TO SUPPORT THE #{politician.party}.".center(60)
+			puts "I'M ALWAYS GOING TO SUPPORT THE #{politician.party} NOMINEE.".center(60)
 			Display.blank
 			Display.longest_line
 			sleep 2
@@ -346,15 +346,15 @@ end
 		Display.clearscreen
 		Display.full_line
 		puts "THE ELECTORAL COLLEGE IS HOPELESSLY DEADLOCKED.".center(78)
-		Display.long_line
+		Display.full_line
 		Display.showmap	
 
 		Display.blank
-		Display.long_line
+		Display.full_line
 		puts "ONLY ONE VOTE (YOURS) CAN SWAY THE ELECTION.".center(78)
-		Display.long_line
+		Display.full_line
 		Display.blank
-		Display.long_line
+		Display.full_line
 		puts "PRESS ENTER TO CONTINUE".center(78)
 		gets.chomp
 		choose_winner
