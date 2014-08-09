@@ -16,7 +16,7 @@ class Voter
 	def getsname
 		inputok = false
 		until inputok == true
-		@name = gets.chomp.upcase!
+		@name = gets.chomp.upcase
 			if @name != nil and @name.squeeze.length > 0
 				inputok = true
 			else inputok = false
@@ -28,7 +28,7 @@ class Voter
 	def getspolitics
 		inputok = false
 		until inputok
-		@politics = gets.chomp.upcase!
+		@politics = gets.chomp.upcase
 			case @politics
 			when "L", "1", "LIBERAL"
 			@politics = "LIBERAL"
@@ -60,7 +60,7 @@ class Voter
 		Display.newvotername
 		inputok = false
 		until inputok
-			@name = gets.chomp.upcase!
+			@name = gets.chomp.upcase
 			if @name != nil and @name.squeeze.length > 0
 				inputok = true
 			else inputok = false

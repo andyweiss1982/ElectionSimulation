@@ -84,7 +84,8 @@ def run_primaries
 		Display.blank
 		Display.longest_line
 		@voters.each {|voter|
-		if (voter.politicalnum >= rand(100)) 
+			randomnum = rand(100)
+		if voter.politicalnum >= randomnum
 			Display.blank
 			puts "#{voter.name} SAYS...".center(60) 
 			sleep 1 
@@ -94,7 +95,7 @@ def run_primaries
 			Display.blank
 			Display.longest_line
 			sleep 2
-		elsif (voter.politicalnum < rand(100))
+		elsif voter.politicalnum < randomnum
 			Display.blank
 			puts "#{voter.name} SAYS...".center(60) 
 			sleep 1 
@@ -179,7 +180,8 @@ def run_primaries
 		Display.blank
 		Display.longest_line
 		@voters.each {|voter|
-		if (voter.politicalnum >= rand(100)) 
+		randomnum = rand(100)
+		if voter.politicalnum >= randomnum
 			Display.blank
 			puts "#{voter.name} SAYS...".center(60) 
 			sleep 1 
@@ -188,7 +190,7 @@ def run_primaries
 			Display.blank
 			Display.longest_line
 			sleep 2
-		elsif (voter.politicalnum < rand(100))
+		elsif voter.politicalnum < randomnum
 			Display.blank
 			puts "#{voter.name} SAYS...".center(60) 
 			sleep 1 
@@ -260,15 +262,15 @@ end
 	@reptotal = 0
 
 		@politicians.each {|politician|
-
-		if (politician.politicalnum >= rand(100))  
+			randomnum = rand(100)
+		if politician.politicalnum >= randomnum  
 			Display.show_voting
 			@demtotal += 1
 			puts "✭✭✭✭✭✭✭✭✭✭✭✭✭✭✭✭✭✭✭✭✭✭✭".center(78)
 			puts "     PRESS ENTER     ✭ DEMOCRATIC VOTES: #{@demtotal} ✭     TO CONTINUE     " .center(78)
 			puts "✭✭✭✭✭✭✭✭✭✭✭✭✭✭✭✭✭✭✭✭✭✭✭".center(78)
 			sleep 2
-		elsif (politician.politicalnum <= rand(100))
+		elsif politician.politicalnum <= randomnum
 			Display.show_voting
 			@reptotal += 1
 			puts "✭✭✭✭✭✭✭✭✭✭✭✭✭✭✭✭✭✭✭✭✭✭✭".center(78)
@@ -278,15 +280,16 @@ end
 		end}
 
 		@voters.each {|voter|
+			randomnum = rand(100)
 
-		if (voter.politicalnum >= rand(100))  
+		if voter.politicalnum >= randomnum
 			Display.show_voting
 			@demtotal += 1
 			puts "✭✭✭✭✭✭✭✭✭✭✭✭✭✭✭✭✭✭✭✭✭✭✭".center(78)
 			puts "     PRESS ENTER     ✭ DEMOCRATIC VOTES: #{@demtotal} ✭     TO CONTINUE     " .center(78)
 			puts "✭✭✭✭✭✭✭✭✭✭✭✭✭✭✭✭✭✭✭✭✭✭✭".center(78)
 			sleep 2
-		elsif (voter.politicalnum <= rand(100))
+		elsif voter.politicalnum <= randomnum
 			Display.show_voting
 			@reptotal += 1
 			puts "✭✭✭✭✭✭✭✭✭✭✭✭✭✭✭✭✭✭✭✭✭✭✭".center(78)
@@ -313,6 +316,8 @@ end
 		Display.demsline
 		Display.blank
 		Display.blank
+		puts "THE PEOPLE HAVE SPOKEN. #{@democraticnominee} HAS WON.".center(56)
+		Display.blank
 		Display.blank
 		Display.line45
 		puts "DO YOU BELIEVE THE ELECTION RESULTS?".center(56)
@@ -330,6 +335,8 @@ end
 		Display.repswin
 		Display.repsline
 		Display.blank
+		Display.blank
+		puts "THE PEOPLE HAVE SPOKEN.  #{@republicannominee} HAS WON.".center(56) 
 		Display.blank
 		Display.blank
 		Display.line45

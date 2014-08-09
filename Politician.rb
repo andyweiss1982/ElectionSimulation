@@ -19,7 +19,7 @@ class Politician < Voter
 	def getsparty
 		inputok = false
 		until inputok
-			@party = gets.chomp.upcase!		
+			@party = gets.chomp.upcase		
 			case @party
 			when "D", "DEM", "DEMS", "DEMOCRAT", "DEMOCRATS", "DEMOCRATIC", "DEMOCRATIC PARTY", "1"
 				@party = "DEMOCRAT"
@@ -39,7 +39,7 @@ class Politician < Voter
 	def getsname
 		inputok = false
 		until inputok == true
-		@name = gets.chomp.upcase!
+		@name = gets.chomp.upcase
 			if @name != nil and @name.squeeze.length > 0
 				inputok = true
 			else inputok = false
@@ -52,7 +52,7 @@ class Politician < Voter
 		Display.new_politician_name
 		inputok = false
 		until inputok
-			@name = gets.chomp.upcase!
+			@name = gets.chomp.upcase
 			if @name != nil and @name.squeeze.length > 0
 				inputok = true
 			else inputok = false
