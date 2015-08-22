@@ -1,5 +1,8 @@
 README
 
+to run, clone, cd and then ruby Election.rb.
+
+
 My response to the question:
 
 Voter Drive
